@@ -9,20 +9,18 @@ class IntegerVector
 
 private:
 
-/*------------------------------------------------------------------*/
-
 	int m_nAllocated, m_nUsed;
 	int* m_pData;
 
 /*------------------------------------------------------------------*/
+	
+private:
 
 	void Grow();
 
 /*------------------------------------------------------------------*/
 
 public:
-
-/*------------------------------------------------------------------*/
 
 	IntegerVector(int _size = 10);
 
@@ -53,6 +51,7 @@ public:
 	bool operator != (const IntegerVector &_v)const;
 
 	void printV(std::ostream &_o);
+/*------------------------------------------------------------------*/
 };
 
 inline int IntegerVector::getSize() const
