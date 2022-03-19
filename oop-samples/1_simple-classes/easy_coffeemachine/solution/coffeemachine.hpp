@@ -11,8 +11,6 @@ class CoffeeMachine
 
 private:
 
-/*-----------------------------------------------------------------*/
-
 	const int m_maxWaterLiters;
 	const int m_maxCoffeeBeans;
 	const int m_maxCoffeePortions;
@@ -23,13 +21,13 @@ private:
 
 /*-----------------------------------------------------------------*/
 	
+private:
+	
 	bool isValid() const;
 
 /*-----------------------------------------------------------------*/
 
 public:
-
-/*------------------------------------------------------------------*/
 
 	enum Recipe { Espresso, Americano };
 
@@ -43,6 +41,8 @@ public:
 	static const int beansStrength[3];
 
 /*------------------------------------------------------------------*/
+
+public:
 
 	CoffeeMachine(int _coffeeBeans, int _water, int _coffeePortions);
 
