@@ -9,15 +9,11 @@ class IntegerSet
 
 private:
 
-/*------------------------------------------------------------------*/
-
 	IntegerVector m_vector;
 
 /*------------------------------------------------------------------*/
 
 public:
-
-/*------------------------------------------------------------------*/
 
 	IntegerSet(int _size = 10);
 	~IntegerSet();
@@ -45,6 +41,8 @@ public:
 	bool operator != (const IntegerSet &_v)const;
 
 	void printS(std::ostream &_o);
+	
+/*------------------------------------------------------------------*/	
 };
 
 inline int IntegerSet::getSize() const
