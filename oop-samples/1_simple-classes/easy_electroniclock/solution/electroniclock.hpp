@@ -12,8 +12,6 @@ class ElectronicLock
 
 private:
 
-/*------------------------------------------------------------------*/
-
 	int m_programmingCode;
 
 	bool m_inProgrammingMode;
@@ -23,8 +21,6 @@ private:
 /*------------------------------------------------------------------*/
 
 public:
-
-/*------------------------------------------------------------------*/
 
 	ElectronicLock(int _programmingCode);
 
@@ -55,6 +51,8 @@ public:
 	bool operator !=(const ElectronicLock &_el)const;
 
 	void printL(std::ostream &_o);
+	
+/*------------------------------------------------------------------*/
 
 };
 
