@@ -1,9 +1,9 @@
-1.	В программе имеются заданные в явном виде данные о ежемесячной выручке предприятия “Рога и Копыта” за 
-	предыдущий год деятельности. Пользователь вводит в программу порядковый номер месяца в году 
-	(январь-1, февраль-2,..., декабрь-12). Программа печатает данное о выручке в соответствующем введенному 
-	номеру месяцу. Если вводится неправильный номер, программа печатает соответствующее сообщение об ошибке.
+1. The program contains explicitly specified data on the monthly revenue of the Roga i Kopyta enterprise for
+previous year of activity. The user enters the serial number of the month in the year into the program
+(January-1, February-2,..., December-12). The program prints the revenue data in the appropriate format for the input.
+month number. If an incorrect number is entered, the program prints an appropriate error message.
 
-2.	Программа генерирует массив из N случайных целых чисел. Необходимо замерять и сравнить производительность 
-	двух фрагментов программы для различных N:
-	o	большое количество M вызовов линейного поиска случайного числа в этом массиве;
-	o	запуск быстрой сортировки массива + такое же большое количество M вызовов бинарного поиска случайного числа в этом же массиве.
+2. The program generates an array of N random integers. It is necessary to measure and compare performance
+two program fragments for different N:
+o a large number of M calls to a linear search for a random number in this array;
+o launching a quicksort of the array + the same large number of M calls to binary search for a random number in the same array.
