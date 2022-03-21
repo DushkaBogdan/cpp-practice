@@ -1,35 +1,35 @@
-1.	Пользователь вводит в программу через консоль последовательность целых чисел произвольной длины, 
-	заканчивая ввод нажатием комбинации клавиш Ctrl+Z.  После того как в программу введено 5 чисел, 
-	на каждое новое вводимое число программа выводит элементы введенной последовательности с самого начала 
-	по одному с сохранением изначального порядка.
+1. The user enters into the program through the console a sequence of integers of arbitrary length,
+ending the input by pressing the key combination Ctrl + Z. After 5 numbers are entered into the program,
+for each new input number, the program displays the elements of the input sequence from the very beginning
+one at a time while maintaining the original order.
 
-           Пример ввода:
-       1 <Enter>
-       2 <Enter>
-       3 <Enter>
-       4 <Enter>
-       5 <Enter>
-       6 <Enter>
-       7 <Enter>
-       8 <Enter>
-       9 <Enter>
+           Input example:
+       1<Enter>
+       2<Enter>
+       3<Enter>
+       4<Enter>
+       5<Enter>
+       6<Enter>
+       7<Enter>
+       8<Enter>
+       9<Enter>
        <Ctrl+Z> <Enter>
 
-           Пример вывода:
-       1 // после ввода числа 6 
+           Sample output:
+       1 // after entering the number 6
        2
        3
        4
 
-2.	Внесите дополнительные усовершенствования в реализацию вектора целых чисел:
-	o	предоставьте функцию для резервирования места в векторе под будущие элементы, чтобы избежать лишних аллокаций:
+2. Make additional improvements to the vector implementation of integers:
+o provide a function to reserve space in the vector for future elements to avoid unnecessary allocations:
 
-   void IntegerVectorReserve ( IntegerVector & _v, int _nCells );
+   void IntegerVectorReserve( IntegerVector & _v, int _nCells );
 
-	o	предоставьте функцию для уменьшения размера выделенного блока до размера, необходимого для хранения уже внесенных значений:
+o Provide a function to reduce the size of the allocated block to the size needed to store the values ​​already entered:
 
-   void IntegerVectorShrinkToFit ( IntegerVector & _v );
+   void IntegerVectorShrinkToFit( IntegerVector & _v );
 
-	o	предоставьте функцию, которая возвращает число ячеек имеющихся в наличии для вставки до следующего роста вектора:
+o Provide a function that returns the number of cells available for insertion until the next growth of the vector:
 
    int IntegerVectorRemainingCapacity ( const IntegerVector & _v );
