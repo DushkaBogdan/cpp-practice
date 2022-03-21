@@ -1,5 +1,5 @@
-Используя базовую структуру в виде массива меток и массива родительских индексов, реализуйте основные 
-операции АТД “дерево” с метками в виде строк. Реализация должна содержать типовые операции создания, 
-уничтожения, ROOT, NODE_LABEL, PARENT, LEFTMOST_CHILD, RIGHT_SIBLING, а также прямой, обратный и симметричный обход. 
-Строки должны копироваться в дерево при вставке и корректно уничтожаться. Создайте тестовую программу, 
-активизирующую реализацию всех операций.
+Using the basic structure in the form of an array of labels and an array of parent indices, implement the main
+ADT operations “tree” labeled as strings. The implementation should contain typical creation operations,
+destruction, ROOT, NODE_LABEL, PARENT, LEFTMOST_CHILD, RIGHT_SIBLING, and forward, backward, and symmetric traversal.
+Rows should be copied into the tree on insertion and destroyed correctly. Create a test program
+activating the implementation of all operations.
