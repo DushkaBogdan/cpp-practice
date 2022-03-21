@@ -1,15 +1,15 @@
-1.	Дополните реализацию АТД “множество” для целых чисел на основе односвязных списков следующими операциями:
-		
-       	IS_SUBSET ( set1, set2 ) : bool  - возвращает true, если первое множество является подмножеством второго множества.
+1. Complete the implementation of the ADT “set” for integers based on singly linked lists with the following operations:
 
-       	EQUAL ( set1, set2 ) : bool  - возвращает true, если два множества состоят из одних и тех же элементов.
+       IS_SUBSET ( set1, set2 ) : bool - returns true if the first set is a subset of the second set.
 
-	MIN_KEY ( set ) : value  - возвращает ключ с минимальным значением.
+       EQUAL ( set1, set2 ) : bool - returns true if two sets have the same elements.
 
-	MAX_KEY ( set ) : value  - возвращает ключ с максимальным значением.
+MIN_KEY ( set ) : value - Returns the key with the minimum value.
 
-2.	В программе имеется заданное в явном виде множество из 20 фамилий, упорядоченных по алфавиту. 
-	Фамилии могут повторяться. Пользователь вводит строку, означающую фамилию. Программа ищет введенную 
-	фамилию во множестве и печатает количество записей с такой фамилией. Если записей не обнаружено, 
-	программа печатает число 0. Обязательное условие - программа в худшем случае должна сделать не более 
-	5 сравнений фамилий!
+MAX_KEY ( set ) : value - Returns the key with the maximum value.
+
+2. The program has an explicit set of 20 surnames ordered alphabetically.
+Surnames may be repeated. The user enters a string representing the last name. The program looks for the entered
+last name in the set and prints the number of records with that last name. If no records are found,
+the program prints the number 0. A prerequisite is that the program, in the worst case, must do no more than
+5 family comparisons!
