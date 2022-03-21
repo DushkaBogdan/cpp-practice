@@ -1,7 +1,7 @@
-В дисковом файле, путь к которому передается первым аргументом командной строки, содержатся записи о людях по 1 строке на человека в следующем формате:
+The disk file, the path to which is passed as the first command-line argument, contains records about people, 1 line per person, in the following format:
 
-	<фамилия> <возраст>
+<surname> <age>
 
-Вторым аргументом командной строки передается число, означающее граничный возраст. 
-Выведите на экран фамилии и возраст всех людей, которые старше граничного возраста. 
-Постарайтесь обработать все возможные ошибки, такие как несуществующий файл, некорректный формат или возраст.
+The second argument on the command line is a number representing the cutoff age.
+Display the last names and ages of all people who are over the age limit.
+Try to handle all possible errors such as non-existent file, bad format or age.
