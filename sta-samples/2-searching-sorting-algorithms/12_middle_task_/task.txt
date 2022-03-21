@@ -1,13 +1,12 @@
+In a restaurant during the working day for all visitors, the time of arrival and departure is recorded as a pair of time points.
+Some visitors spend more time in the restaurant, some less. As a result of collecting information,
+there is an array of variables of the simplest structure:
 
-В ресторане в течение рабочего дня для всех посетителей регистрируется время прихода и ухода в виде пары моментов времени. 
-Некоторые посетители проводят в ресторане больше времени, некоторые меньше. В результате сбора информации, 
-имеется массив из переменных простейшей структуры:
+struct CustomerVisitTime
+            {
+                short m_startHour, m_startMinute;
+                short m_finishHour, m_finishMinute;
+            };
 
-		struct CustomerVisitTime
-           {
-               short m_startHour, m_startMinute;
-               short m_finishHour, m_finishMinute;
-           };
-
-Требуется вычислить в течение какого из 30-минутных отрезков в сутках в ресторане находилось наибольшее 
-количество одновременных посетителей.
+It is required to calculate during which of the 30-minute segments of the day the restaurant had the most
+the number of concurrent visitors.
