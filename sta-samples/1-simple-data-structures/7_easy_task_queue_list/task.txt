@@ -1,22 +1,22 @@
-1.	Пользователь вводит в программу через консоль последовательность целых чисел. Каждое число начинается с новой 
-	строки. Если число положительное, оно заносится в память. Если вводится число -1, программа выводит на экран 
-	текущее состояние вводимой последовательности. Если вводится число -2, программа удаляет из памяти наиболее 
-	раннее из введенных чисел, сохранившихся в памяти. Если удалять нечего, программа выводит сообщение об ошибке 
-	и продолжает ввод. Ввод числа 0 означает конец ввода последовательности и выход из программы.
+1. The user enters a sequence of integers into the program through the console. Each number starts with a new
+lines. If the number is positive, it is stored in memory. If the number -1 is entered, the program displays
+the current state of the input sequence. If the number -2 is entered, the program removes the most
+the earliest of the entered numbers stored in memory. If there is nothing to delete, the program displays an error message
+and continues typing. Entering the number 0 means the end of the input sequence and exit from the program.
 
-           Пример ввода:
-       1 <Enter>
-       2 <Enter>
-       3 <Enter>
-      -1 <Enter>
+           Input example:
+       1<Enter>
+       2<Enter>
+       3<Enter>
+      -1<Enter>
       -2 <Enter>
-      -1 <Enter>
-       0 <Enter>
+      -1<Enter>
+       0<Enter>
 
-           Пример вывода:
+           Sample output:
        1 2 3
        2 3
 
-2.	Реализуйте АТД “очередь” на основе односвязного списка для элементов, являющихся векторами целых чисел 
-	( т.е., очередь векторов ). При помещении в очередь векторы должны корректно копироваться, а при удалении 
-	из очереди после обработки - корректно уничтожаться.
+2. Implement a queue ADT based on a singly linked list for elements that are vectors of integers
+(i.e., a queue of vectors). When placed in the queue, the vectors must be copied correctly, and when removed
+from the queue after processing - correctly destroyed.
