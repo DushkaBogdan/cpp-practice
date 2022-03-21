@@ -1,22 +1,22 @@
-1.	Пользователь вводит в программу через консоль последовательность положительных целых чисел, 
-	завершая ввод нулем либо отрицательным числом. Далее пользователь вводит положительное число P, 
-	обозначающее существующую во введенной последовательности позицию. Программа выводит на экран все 
-	значения последовательности, стоящие после P, в обратном порядке, за которыми следует значение в ячейке P, 
-	а за ним все значения, ранее стоявшие до P в прямом порядке.
+1. The user enters into the program through the console a sequence of positive integers,
+terminating the input with zero or a negative number. Next, the user enters a positive number P,
+denoting an existing position in the input sequence. The program displays all
+sequence values ​​after P, in reverse order, followed by the value in cell P,
+followed by all the values ​​before P in direct order.
 
-           Пример ввода:
+           Input example:
        1 2 3 4 5 6 7 8 9 0 <Enter>
-       4 <Enter>
+       4<Enter>
 
-           Пример вывода:
+           Sample output:
        9 8 7 6 5 1 2 3 4
 
-2.	Реализуйте АТД “стек” на основе векторов для элементов - комплексных чисел:
-	
+2. Implement a stack ADT based on vectors for elements - complex numbers:
+
       struct Complex
       {
           float m_real, m_imaginary;
       };
 
-Предполагается, что все функции, обеспечивающие работу стека, будут принимать в качестве аргументов экземпляры 
-структуры Complex, а не отдельные компоненты.
+It is assumed that all functions that provide the operation of the stack will take instances as arguments
+Complex structures, not individual components.
