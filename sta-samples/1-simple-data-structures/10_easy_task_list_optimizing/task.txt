@@ -1,40 +1,40 @@
-1.	Пользователь вводит в программу через консоль последовательность положительных целых чисел, 
-	завершая ввод нулем либо отрицательным числом. Затем пользователь вводит число X. Если число X больше 
-	либо равно текущему первому элементу последовательности в памяти, ничего не происходит. 
-	Если же число X меньше, первый элемент последовательности удаляется из памяти. Независимо от значения X, 
-	программа выводит текущее состояние хранимой последовательности на каждом шаге. 
-	Процесс ввода числа X и возможного изменения последовательности повторяется до тех пор, 
-	пока последовательность в памяти не окажется пустой.
+1. The user enters into the program through the console a sequence of positive integers,
+terminating the input with zero or a negative number. The user then enters the number X. If the number X is greater than
+or equal to the current first element of the sequence in memory, nothing happens.
+If the number X is less, the first element of the sequence is removed from memory. Regardless of the value of X,
+the program outputs the current state of the stored sequence at each step.
+The process of entering the number X and possibly changing the sequence is repeated until
+until the sequence in memory is empty.
 
-           Пример ввода:
-       1 2 3 4 5 0 <Enter>
-       5 <Enter>
-       0 <Enter>
-       1 <Enter>
-       0 <Enter>
-       1 <Enter>
-       0 <Enter>
+           Input example:
+       1 2 3 4 5 0
+       5<Enter>
+       0<Enter>
+       1<Enter>
+       0<Enter>
+       1<Enter>
+       0<Enter>
 
-           Пример вывода:
+           Sample output:
        1 2 3 4 5
        2 3 4 5
        3 4 5
        4 5
-       5
+       five
 
-2.	Дополните реализацию односвязных списков следующими операциями:
-	o	Операция подсчета суммы элементов:
+2. Complete the implementation of singly linked lists with the following operations:
+o The operation of calculating the sum of elements:
 
      int IntegerListAccumulate ( const IntegerList & _list );
 
-	o	Операция проверки является ли список упорядоченным по возрастанию:
+o Operation to check if the list is sorted in ascending order:
 
      bool IntegerListIsSorted ( const IntegerList & _list );
 
-	o	Операция разделения списка на два списка по указанному элементу 
-		(все элементы левее не включая указанный попадают в первый список, разделяющий элемент и все последующие за ним - во второй список):
+o The operation of splitting a list into two lists by the specified element
+(all elements to the left, not including the specified one, fall into the first list separating the element and all subsequent ones into the second list):
 
-           void IntegerListSplice ( IntegerList & _sourceList,
+           void IntegerListSplice( IntegerList & _sourceList,
                                IntegerList::Node * _pSplitNode,
-                               IntegerList & _targetList1,         
-                               IntegerList & _targetList2 );
+                               IntegerList & _targetList1,
+                               IntegerList & _targetList2);
