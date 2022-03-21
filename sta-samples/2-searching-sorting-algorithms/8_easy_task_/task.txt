@@ -1,13 +1,13 @@
-1.	Представьте небольшую гостиницу, в которой имеется 20 номеров. Некоторые могут быть свободны, 
-	некоторые заняты постояльцами. Напишите программу, имитирующую учет информации о постояльцах номеров. 
-	Изначально гостиница пуста. Если пользователь вводит число 1, за ним следует число, означающее номер, 
-	и программа печатает занят ли данный номер. Если пользователь вводит число 2, за ним также следует число, 
-	означающее номер, и программа делает свободный номер занятым. Если номер был уже занят, программа печатает 
-	сообщение об ошибке. Если пользователь вводит число 3, за ним также следует число, означающее номер, 
-	и программа освобождает занятый номер. Если номер не был занят, программа печатает сообщение об ошибке. 
-	Процесс повторяется циклически до ввода числа 4, после которого программа завершается. В командах 1-3, 
-	если введен неправильный номер, программа печатает сообщение об ошибке.
+1. Imagine a small hotel with 20 rooms. Some may be free
+some are occupied by guests. Write a program that simulates the registration of information about the guests of the rooms.
+Initially, the hotel is empty. If the user enters the number 1, it is followed by a number representing the number
+and the program prints whether the given number is busy. If the user enters the number 2, it is also followed by the number
+signifying number, and the program makes the free number occupied. If the number was already taken, the program prints
+error message. If the user enters the number 3, it is also followed by a number representing the number
+and the program releases the busy number. If the number was not busy, the program prints an error message.
+The process is repeated cyclically until the number 4 is entered, after which the program ends. In teams 1-3,
+if an incorrect number is entered, the program prints an error message.
 
-2.	Пользователь вводит в программу последовательность положительных целых чисел в произвольном порядке, 
-	завершая ввод нулем либо отрицательным числом. Программа отвечает на вопрос существует ли такая перестановка 
-	введенных чисел, чтобы из исходного набора получилась арифметическая прогрессия.
+2. The user enters into the program a sequence of positive integers in an arbitrary order,
+terminating the input with zero or a negative number. The program answers the question whether such a permutation exists.
+entered numbers so that an arithmetic progression is obtained from the original set.
