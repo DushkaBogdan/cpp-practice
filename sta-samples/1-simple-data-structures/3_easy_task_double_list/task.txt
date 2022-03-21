@@ -1,16 +1,16 @@
-1.	Пользователь вводит в программу через консоль последовательность положительных целых чисел,
-	завершая ввод нулем либо отрицательным числом. Далее вводится два неотрицательных числа - позиция P 
-	и количество N. Следует удалить из введенной последовательности N чисел, начиная с позиции P, 
-	и вывести оставшиеся в последовательности числа. Если позиции P не существует либо число N меньше 1, 
-	вывести соответствующие сообщения об ошибке. Если начиная с позиции P чисел меньше, чем N, 
-	удалить все элементы начиная с позиции P и до конца последовательности. 
-	Порядок выводимых чисел должен соответствовать изначальному порядку ввода.
+1. The user enters into the program through the console a sequence of positive integers,
+terminating the input with zero or a negative number. Next, two non-negative numbers are entered - the position P
+and number N. It should be removed from the entered sequence of N numbers, starting from position P,
+and output the remaining numbers in the sequence. If the position P does not exist or the number N is less than 1,
+display appropriate error messages. If starting from position P there are less than N numbers,
+remove all elements from position P to the end of the sequence.
+The order of the output numbers must match the original input order.
 
-           Пример ввода:
+           Input example:
        1 2 3 4 5 6 7 8 9 0 <Enter>
        4 3 <Enter>
 
-           Пример вывода:
+           Sample output:
        1 2 3 4 8 9
 
-2.	Разработайте реализацию и тестовую программу, реализующую двусвязный список со всеми операциями.
+2. Develop an implementation and a test program that implements a doubly linked list with all operations.
