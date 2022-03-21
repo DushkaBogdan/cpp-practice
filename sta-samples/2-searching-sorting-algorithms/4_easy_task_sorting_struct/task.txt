@@ -1,17 +1,17 @@
-1.	В программе имеются в явном виде заданные данные о численности населения всех областей Украины 
-	(используйте любые данные, не обязательно вспоминать названия всех областей и вводить реальные 
-	данные о численности населения). Пользователь вводит в программу через консоль строку с названием области, 
-	а программа печатает данные о численности населения этой области. Если введенной области в памяти нет, 
-	программа печатает на экране соответствующее сообщение об ошибке.
+1. The program contains explicitly specified data on the population of all regions of Ukraine
+(use any data, it is not necessary to remember the names of all areas and enter real
+population data). The user enters into the program through the console a string with the name of the area,
+and the program prints out the population of that area. If the entered area is not in memory,
+the program prints an appropriate error message on the screen.
 
-2.	Имеется структура, описывающая фамилии и инициалы людей:
+2. There is a structure that describes the names and initials of people:
 
        struct PersonName
        {
-           char * m_lastName;
+           char*m_lastName;
            char m_initials[ 2 ];
        };
 
-          Реализуйте один из простейших алгоритмов сортировки на ваш вкус (пузырьковая, выбором, вставками) 
-	для массива элементов, являющихся объектами данной структуры. При этом, первоочередным критерием для 
-	сравнения двух объектов должна являться фамилия, а при равенстве фамилии - разница в инициалах.
+          Implement one of the simplest sorting algorithms of your choice (bubble, selection, inserts)
+for an array of elements that are objects of this structure. At the same time, the primary criterion for
+comparison of two objects should be the surname, and if the surname is equal, the difference in initials.
