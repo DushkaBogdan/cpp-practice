@@ -1,16 +1,16 @@
-1.	Пользователь вводит в программу через консоль последовательность положительных целых чисел, завершая ввод нулем либо отрицательным числом.
-	Программа совершает обход введенных данных от начала до конца. Если во введенной последовательности имеется подпоследовательность, 
-	состоящая из 3 и более элементов, которые расположены по возрастанию, программа выводит данную подпоследовательность целиком через пробел на отдельной строке. 
-	Программа пытается выявлять упорядоченные подпоследовательности как можно большей длины. Дальнейший анализ начинается с элемента, нарушающего предыдущую выведенную подпоследовательность. 
+1. The user enters into the program through the console a sequence of positive integers, terminating the input with zero or a negative number.
+The program traverses the entered data from beginning to end. If the input sequence contains a subsequence,
+consisting of 3 or more elements, which are arranged in ascending order, the program displays the given subsequence in its entirety separated by a space on a separate line.
+The program tries to find ordered subsequences of as long as possible. Further analysis begins with an element that violates the previous derived subsequence.
 
-           Пример ввода:
+           Input example:
                1 2 5 6 7 1 2 3 4 8 9 10 11 0 <Enter>
 
-           Пример вывода:
+           Sample output:
                5 6 7
-	1 2 3 4
+1 2 3 4
        8 9 10 11
 
-2.	Реализуйте структуру, операции и тестовую программу для односвязного списка строк. 
-	Реализация не должна делать предположений о времени хранения передаваемых в качестве аргументов строк, соответственно, 
-	содержимое строк следует корректно копировать, а затем освобождать, когда они больше не требуются.
+2. Implement the structure, operations, and test program for a singly linked list of strings.
+The implementation should not make assumptions about the storage time of the strings passed as arguments, respectively,
+the contents of rows should be correctly copied and then deallocated when they are no longer needed.
