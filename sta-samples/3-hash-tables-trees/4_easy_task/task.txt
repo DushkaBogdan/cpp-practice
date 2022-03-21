@@ -1,4 +1,4 @@
-Пользуясь информацией с сайта cist.kture.kharkov.ua, создайте дерево на основе любой из базовых структур, 
-хранящее информацию об устройстве университета: университет, факультеты, кафедры. Реализуйте прямой обход 
-данного дерева, при котором структура университета распечатывается на консоли в удобном для чтения виде 
-с отступами для каждого из уровней.
+Using the information from cist.kture.kharkov.ua, create a tree based on any of the basic structures,
+storing information about the device of the university: university, faculties, departments. Implement forward traversal
+of this tree, in which the structure of the university is printed on the console in a readable form
+with indents for each of the levels.
