@@ -1,13 +1,13 @@
-1.	Реализуйте все операции АТД “множество” для строковых ключей на основе упорядоченных по алфавиту 
-	односвязных списков. Помещаемые во множество строки следует копировать при вставке, 
-	корректно освобождать при удалении. Убедитесь в работоспособности реализации при помощи тестовой программы.
+1. Implement all ADT “set” operations for string keys based on alphabetically ordered
+singly linked lists. Rows placed in a set should be copied on paste,
+correctly free on deletion. Verify that the implementation works with a test program.
 
-2.	Имеется массив элементов-точек в трехмерном пространстве:
+2. There is an array of elements-points in three-dimensional space:
 
-        struct Point3D
+        structPoint3D
         {
             double m_x, m_y, m_z;
         };
 
-	Взяв за основу любой из полюбившихся алгоритмов сортировки, напишите программу, 
-	которая упорядочивает массив точек по возрастанию расстояния точки до начала координат и выводит его на экран.
+Using any of your favorite sorting algorithms as a basis, write a program that
+which sorts the array of points in ascending order of the point's distance from the origin and displays it on the screen.
