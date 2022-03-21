@@ -1,6 +1,6 @@
-Используя в качестве базы динамическую структуру узлов дерева с указателями на родителя, левый дочерний узел 
-и правый братский узел, реализуйте основные операции АТД “дерево” с метками в виде строк. 
-Реализация должна содержать типовые операции создания, 
-уничтожения, ROOT, NODE_LABEL, PARENT, LEFTMOST_CHILD, RIGHT_SIBLING, а также прямой, обратный и симметричный обход. 
-Строки должны копироваться в дерево при вставке и корректно уничтожаться. 
-Создайте тестовую программу, активизирующую реализацию всех операций.
+Using as a base a dynamic structure of tree nodes with pointers to the parent, the left child node
+and the right sibling node, implement the basic operations of a tree ADT with string labels.
+The implementation should contain typical creation operations,
+destruction, ROOT, NODE_LABEL, PARENT, LEFTMOST_CHILD, RIGHT_SIBLING, and forward, backward, and symmetric traversal.
+Rows should be copied into the tree on insertion and destroyed correctly.
+Create a test program that activates the implementation of all operations.
