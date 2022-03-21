@@ -1,9 +1,9 @@
-1.	Пользователь вводит в программу текст произвольной длины, завершая ввод нажатием комбинации клавиш <Ctrl+Z>. 
-	Программа вычисляет длину каждой введенной строки и собирает статистику длины различных строк в
-	объекте-отображении. Ключом в отображении является длина строки, а значением - количество строк с такой длиной. 
-	После завершения ввода программа печатает на экране собранную статистику. 
+1. The user enters text of arbitrary length into the program, completing the input by pressing the key combination <Ctrl+Z>.
+The program calculates the length of each input string and collects statistics on the length of the various strings in
+display object. The key in the mapping is the length of the string, and the value is the number of strings with that length.
+After the input is completed, the program prints the collected statistics on the screen.
 
-2.	Реализуйте простейший алгоритм сортировки на ваш вкус (пузырьковая, выбором, вставками) для массива, 
-	содержащего указатели на объекты-множества целых чисел. При сравнении множеств следует, в первую очередь, 
-	руководствоваться минимальным значением, находящимся во множестве. При равенстве таких минимальных значений 
-	для двух множеств, первым по порядку должно идти множество с меньшим количеством элементов.
+2. Implement the simplest sorting algorithm of your choice (bubble, selection, inserts) for the array,
+containing pointers to objects-sets of integers. When comparing sets, the first thing to do is
+be guided by the minimum value in the set. If these minimum values ​​are equal
+for two sets, the set with fewer elements should come first.
