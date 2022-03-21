@@ -1,5 +1,5 @@
-Используя базовую структуру в виде на основе массива меток и списков дочерних узлов, 
-реализуйте основные операции АТД “дерево” с метками в виде строк. Реализация должна 
-содержать типовые операции создания, уничтожения, ROOT, NODE_LABEL, PARENT, LEFTMOST_CHILD, RIGHT_SIBLING, 
-а также прямой, обратный и симметричный обход. Строки должны копироваться в дерево при вставке и корректно уничтожаться. 
-Создайте тестовую программу, активизирующую реализацию всех операций.
+Using the basic structure in the form based on an array of labels and lists of child nodes,
+implement the basic operations of a tree ADT with labels as strings. Implementation should
+contain typical operations of creation, destruction, ROOT, NODE_LABEL, PARENT, LEFTMOST_CHILD, RIGHT_SIBLING,
+as well as forward, backward, and symmetrical bypass. Rows should be copied into the tree on insertion and destroyed correctly.
+Create a test program that activates the implementation of all operations.
