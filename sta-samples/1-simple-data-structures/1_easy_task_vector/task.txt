@@ -1,17 +1,16 @@
-
-1.	Пользователь вводит в программу через консоль последовательность положительных целых чисел, завершая ввод нулем либо отрицательным числом. 
-	Затем пользователь вводит неотрицательное число, означающее позицию P в последовательности. 
-	Программа выводит на отдельных строках, во-первых, все числа меньшие либо равные числу в позиции P, во-вторых все числа большие P.
-	 Порядок выводимых чисел должен соответствовать изначальному порядку ввода. Если позиции P не существует, программа выводит соответствующее сообщение об ошибке.
+1. The user enters into the program through the console a sequence of positive integers, terminating the input with zero or a negative number.
+The user then enters a non-negative number representing the position of P in the sequence.
+The program displays on separate lines, firstly, all numbers less than or equal to the number in position P, and secondly, all numbers greater than P.
+The order of the output numbers must match the original input order. If position P does not exist, the program prints an appropriate error message.
            
-           Пример ввода:
-       4 2 3 7 5 1 8 9 6 0 <Enter >
-       4 <Enter>
+           Input example:
+       4 2 3 7 5 1 8 9 6 0 <Enter>
+       4<Enter>
 
-           Пример вывода:
+           Sample output:
        4 2 3 5 1
        7 8 9 6
 
-2.	Реализуйте структуру, операции и тестовую программу для динамически растущего массива (вектора) строк. 
-	Реализация не должна делать предположений о времени хранения передаваемых в качестве аргументов строк, 
-	соответственно, содержимое строк следует корректно копировать, а затем освобождать, когда они больше не требуются.
+2. Implement the structure, operations, and test program for a dynamically growing array (vector) of strings.
+An implementation must not make assumptions about the lifetime of strings passed as arguments,
+accordingly, the contents of strings should be correctly copied and then deallocated when they are no longer needed.
