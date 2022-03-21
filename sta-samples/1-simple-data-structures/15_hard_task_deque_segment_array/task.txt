@@ -1,33 +1,33 @@
-Реализуйте АТД “дек” (очередь с двумя концами) на основе сегментированного массива - несколько блоков фиксированной длины, 
-хранящие данные, и служебный блок-директория, содержащий указатели на блоки данных. Обработайте все возможные ошибки.
+Implement a "dec" (double-ended queue) ADT based on a sharded array - multiple fixed-length blocks,
+storing data, and a service block directory containing pointers to data blocks. Handle all possible errors.
 
-Сегментированный массив моделируется следующим образом:
+A segmented array is modeled as follows:
 
 struct IntegerDeque
 {
-   // Количество ячеек в массиве-директории
+   // Number of cells in the directory array
    int m_directorySize;
 
-   // Количество ячеек в каждом блоке данных
+   // Number of cells in each data block
    int m_blockSize;
 
-   // Массив-директория: указатели на блоки данных
+   // Array-directory: pointers to data blocks
    int ** m_pDirectory;
 
-   // Индексы верхней и нижней позиции из занятых ячеек в директории
+   // Indices of the top and bottom position of the occupied cells in the directory
    int m_frontBlockIndex, m_backBlockIndex;
 
-   // Количество занятых элементов в первом и последнем блоках
+   // Number of used elements in the first and last blocks
    int m_frontUsed, m_backUsed;
 };
 
 
-Должны поддерживаться следующие операции:
-•	CLEAR ( DEQUE )
-•	IS_EMPTY( DEQUE ) : bool
-•	PUSH_FRONT( DEQUE, VALUE )
-•	POP_FRONT( DEQUE )
-•	FRONT ( DEQUE ) : VALUE
-•	PUSH_BACK ( DEQUE, VALUE )
-•	POP_BACK( DEQUE )
-•	BACK ( DEQUE ) : VALUE
+The following operations must be supported:
+• CLEAR ( DEQUE )
+• IS_EMPTY( DEQUE ) : bool
+• PUSH_FRONT( DEQUE, VALUE )
+• POP_FRONT( DEQUE )
+• FRONT ( DEQUE ) : VALUE
+• PUSH_BACK ( DEQUE, VALUE )
+• POP_BACK( DEQUE )
+• BACK(DEQUE) : ​​VALUE
