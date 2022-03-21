@@ -1,36 +1,36 @@
-Создайте иерархию классов, моделирующих информацию о простейшем футбольном турнире:
+Create a hierarchy of classes that model information about a simple football tournament:
 
-	•	класс FootballClub - клуб, принимающий участие в турнире:
-		o	название;
-		o	город;
-		o	год основания;
-		o	рейтинг (целое число от 1 до 5);
+• FootballClub class - a club participating in the tournament:
+o name;
+o city;
+o year of foundation;
+o rating (integer from 1 to 5);
 
-	•	класс Match - матч в рамках турнира:
-		o	принимающий и гостевой клубы;
-		o	итоговый счет;
-		o	метод для ручного ввода счета;
-		o	метод для автоматической генерации счета псевдослучайным образом с учетом рейтингов клубов (если рейтинг клуба выше, вероятность его выигрыша выше);
+• Match class - match within the tournament:
+o host and guest clubs;
+o final score;
+o method for manual account entry;
+o a method for automatically generating a score in a pseudo-random way, taking into account club ratings (if the club's rating is higher, the probability of winning is higher);
 
-	•	класс TournamentTable - турнирная таблица:
-		o	информация о статистике клубов - число набранных очков (3 очка за победу, 1 очко за ничью, 0 за поражение), число побед, ничей, поражений, число забитых и пропущенных голов;
-		o	метод для обновления по текущему множеству матчей;
-		o	метод для распечатки таблицы в переданный поток;
-		o	поддержание статистики в отсортированном порядке (по очкам).
+• class TournamentTable - tournament table:
+o information about club statistics - the number of points scored (3 points for a win, 1 point for a draw, 0 points for a loss), the number of wins, draws, defeats, the number of goals scored and conceded;
+o method for updating on the current set of matches;
+o a method for printing the table to the passed stream;
+o maintaining statistics in sorted order (by points).
 
-	•	класс Tournament (футбольный турнир), включающий:
-		o	название;
-		o	фиксированное количество и набор клубов, участвующих в турнире;
-		o	динамически растущая последовательность матчей;
-		o	метод автоматического формирования расписания матчей (все клубы должны сыграть друг против друга по 2 раза - на родном стадионе и в гостях)
-		o	турнирная таблица - хранение и обновление в нужные моменты.
+• Tournament class (football tournament), including:
+o name;
+o a fixed number and set of clubs participating in the tournament;
+o dynamically growing sequence of matches;
+o a method for automatically generating the schedule of matches (all clubs must play against each other 2 times - at the home stadium and away)
+o standings - storage and updating at the right time.
 
-Напишите тестовую консольную программу, создающую и использующую данную модель:
-	•	создать турнир и команды;
-	•	автоматически сформировать расписание матчей;
-	•	провести симуляцию результатов матчей (автоматически сгенерировать счет);
-	•	распечатать на консоли результаты всех матчей;
-	•	сформировать и распечатать детальную турнирную таблицу в текстовом виде на консоль;
-	•	распечатать название клуба, победившего в турнире;
-	•	распечатать названия двух клубов, занявших последние места;
-	•	корректно уничтожить все объекты модели.
+Write a test console program that creates and uses the given model:
+• create a tournament and teams;
+• automatically generate the schedule of matches;
+• simulate the results of matches (automatically generate scores);
+• print the results of all matches on the console;
+• generate and print a detailed tournament table in text form on the console;
+• print the name of the club that won the tournament;
+• print out the names of the last two clubs;
+• correctly destroy all model objects.
