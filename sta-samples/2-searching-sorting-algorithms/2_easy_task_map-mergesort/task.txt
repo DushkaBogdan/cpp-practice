@@ -1,7 +1,7 @@
-1.	Реализуйте все операции АТД “отображение”, у которого в качестве ключей используются строки, 
-	а в качестве значений - действительные числа (double). Реализация должна основываться на двух 
-	отдельных векторах для ключей и значений. Вносимые в отображение строки следует копировать при вставке, 
-	а при удалении данных строки следует корректно освобождать.
+1. Implement all ADT operations “mapping”, which uses strings as keys,
+and as values - real numbers (double). Implementation should be based on two
+separate vectors for keys and values. Lines to be displayed should be copied when pasting,
+and when deleting data, rows should be correctly freed.
 
-2.	Реализуйте алгоритм сортировки слиянием для массива строк, при этом строки должны сравниваться без учета 
-	регистра (т.е., “hello” и “HELLO” следует считать одинаковыми строками).
+2. Implement a merge sort algorithm for an array of strings, where the strings must be compared without taking into account
+case (i.e., "hello" and "HELLO" should be treated as the same string).
