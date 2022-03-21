@@ -1,5 +1,5 @@
-Реализуйте АТД “множество” для строковых ключей на основе хэш-таблиц с линейным разрешением коллизий (закрытое хэширование).
-Должны поддерживаться типовые операции создания, уничтожения, очистки, вставки и удаления ключей, 
-определения наличия ключа во множестве. Реализация теоретико-множественных операций не требуется. 
-Строки должны копироваться в дерево при вставке и корректно уничтожаться. Создайте тестовую программу, 
-активизирующую реализацию всех операций.
+Implement a set ADT for string keys based on hash tables with linear collision resolution (private hashing).
+Generic operations for creating, destroying, clearing, inserting, and deleting keys should be supported.
+determining the presence of a key in the set. The implementation of set-theoretic operations is not required.
+Rows should be copied into the tree on insertion and destroyed correctly. Create a test program
+activating the implementation of all operations.
