@@ -1,9 +1,9 @@
-В двух дисковых файлах, пути к котором передается первым и вторым аргументами командной строки соответственно, 
-содержатся записи о перечислениях на банковские счета, по одной записи на строку в текстовом формате:
+In two disk files, the path to which is passed as the first and second command line arguments, respectively,
+contains records of transfers to bank accounts, one record per line in text format:
 
-	<НОМЕР_ИЗ_ЦИФР> <СУММА_ДЕЙСТВИТЕЛЬНОЕ_ЧИСЛО>
+<NUMBER_FROM_DIGITS> <SUM_REAL_NUMBER>
 
-В третьем аргументе командной строки содержится имя результирующего файла, в который программа должна 
-записать объединение двух первых, при этом платежи на те же самые счета должны быть представлены 
-однократно по сумме всех объединенных. Программа должна сообщать об ошибочных ситуациях, 
-таких как проблемы с открытием файлов или некорректный формат. 
+The third command line argument contains the name of the resulting file into which the program should
+record the union of the first two, while payments to the same accounts must be presented
+once by the sum of all combined. The program should report error situations,
+such as problems opening files or incorrect format.
