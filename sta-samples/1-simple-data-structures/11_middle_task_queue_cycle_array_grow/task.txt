@@ -1,3 +1,3 @@
-Создайте реализацию АТД “очередь” на основе усовершенствованного циклического массива, 
-который автоматически увеличивает размер вдвое при переполнении, подобно вектору. 
-Все остальные характеристики циклического массива должны быть сохранены. 
+Create an implementation of the ADT "queue" based on an advanced circular array,
+which automatically doubles in size on overflow, like a vector.
+All other characteristics of a cyclic array must be preserved.
