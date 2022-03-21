@@ -1,26 +1,26 @@
-Вариант №5:
+Option number 5:
 
-1.	Пользователь вводит в программу через консоль последовательность чисел. Каждое число начинается с новой строки. 
-	Если число положительное, оно заносится в память. Если число отрицательное - последнее введенное число удаляется
-	 из памяти. Если удалять нечего, выводится сообщение об ошибке и продолжается ввод. Если число равно 0, 
-	последовательность завершается. После каждой операции ввода программа выводит на экран текущее содержимое 
-	накопленной последовательности через пробел на отдельной строке.
+1. The user enters a sequence of numbers into the program through the console. Each number starts on a new line.
+If the number is positive, it is stored in memory. If the number is negative, the last entered number is deleted.
+from memory. If there is nothing to delete, an error message is displayed and typing continues. If the number is 0,
+the sequence ends. After each input operation, the program displays the current content on the screen.
+the accumulated sequence separated by a space on a separate line.
 
-           Пример ввода:
-       1 <Enter>
-       2 <Enter>
-       3 <Enter>
-      -1 <Enter>
-       0 <Enter>
+           Input example:
+       1<Enter>
+       2<Enter>
+       3<Enter>
+      -1<Enter>
+       0<Enter>
 
-           Пример вывода:
-       1
-       1 2
+           Sample output:
+       one
+       12
        1 2 3
-       1 2
+       12
 
-2.	Реализуйте АТД “очередь” на основе циклических массивов для элементов, представляющих собой массивы 
-	действительных чисел double, передаваемые в виде пары аргументов - указатель на начало массива + количество 
-	элементов. В очередь могут быть помещены массивы разной длины. Копировать массивы не требуется, 
-	можно рассчитывать на то, что внешняя среда не будет уничтожать блоки, в которых хранятся массивы, 
-	до их выхода из очереди.
+2. Implement a "queue" ADT based on circular arrays for elements that are arrays
+real numbers double, passed as a pair of arguments - a pointer to the beginning of the array + number
+elements. Arrays of different lengths can be placed in the queue. You don't need to copy arrays,
+you can count on the fact that the external environment will not destroy the blocks in which the arrays are stored,
+before they exit the queue.
