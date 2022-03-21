@@ -1,25 +1,25 @@
-Реализуйте и верифицируйте класс, моделирующий электронный кодовый замок (ElectronicLock). Объявление класса следует разместить в файле electroniclock.hpp, а реализацию - в файле electroniclock.cpp.
+Implement and verify a class that models an electronic combination lock (ElectronicLock). The class declaration should be placed in the electroniclock.hpp file and the implementation in the electroniclock.cpp file.
 
-Собственную функцию main() реализовывать не нужно, следует сосредоточиться лишь на интересующем классе.
+You do not need to implement your own main() function, you should focus only on the class of interest.
 
-Замок работает по следующим принципам:
-	•	замок может находится в рабочем режиме либо в режиме программирования;
-	•	для перехода в режим программирования необходимо ввести специальный код;
-	•	в рабочем режиме замок распознает ранее зарегистрированные целочисленные ключи;
-	•	в режиме программирования можно добавлять новые ключи, удалять существующие, а также менять код режима программирования.
+The lock works according to the following principles:
+• the lock can be in operating mode or in programming mode;
+• to switch to the programming mode it is necessary to enter a special code;
+• in operating mode, the lock recognizes previously registered integer keys;
+• in programming mode, you can add new keys, delete existing ones, and change the programming mode code.
 
-В классе должна поддерживаться следующая функциональность:
-	•	Конструктор, принимающий конкретный код для программирования в виде числа типа int, переводящий замок в начальное состояние программирования.
-	•	Деструктор.
-	•	Конструктор копий и оператор присвоения.
-	•	Конструктор перемещения и оператор перемещения.
-	•	Метод isInProgrammingMode(), определяющий находится ли замок в состоянии работы или программирования в данный момент.
-	•	Метод bool toggleProgrammingMode ( int _programmingCode ), пытающийся перевести замок в противоположное текущему состояние. Метод должен возвращать значение true, если переход удался, false - если нет. Переход не удается, если вводится неправильный код программирования. Если замок и так находился в состоянии программирования, действие должно быть обратным - перевод в состояние работы и возврат true.
-	•	Метод registerCode(int), добавляющий новый уникальный код, который должен принимать замок. Если замок не находится в состоянии программирования, следует сгенерировать исключение с текстом "Not in programming mode". Если такой ключ уже зарегистрирован, действие должно игнорироваться.
-	•	Метод unregisterCode(int), удаляющий информацию о ранее зарегистрированном ключе. Если замок не находится в состоянии программирования, следует сгенерировать исключение с текстом "Not in programming mode". Если такой ключ не был зарегистрирован, действие должно игнорироваться.
-	•	Метод changeProgrammingCode( int ), позволяющий сменить код программирования на новый. Если замок не находится в состоянии программирования, следует сгенерировать исключение с текстом "Not in programming mode". После успешной смены кода замок более не принимает старый код программирования.
-	•	Метод tryUnlocking(int), запрашивающий открытие замка, передавая код ключа в виде целого числа в качестве аргумента. В режиме программирования генерируется исключение с текстом "Not in operational mode" . В рабочем режиме метод возвращает true, если ключ распознан, false в противном случае.
-	•	Аналогичный метод tryUnlocking(const char*), принимающий код ключа в виде строки. Если строка содержит нечто отличное от целого числа, генерируется исключение с текстом “Bad format”.
-	•	Перегруженные операторы сравнения с другим замком на равенство и неравенство (== и !=). Замки считаются условно равными, когда совпадают множества принимаемых ими ключей для открытия и код программирования.
+The class must support the following functionality:
+• Constructor that accepts a specific code for programming as an int number, transferring the lock to the initial state of programming.
+• Destructor.
+• Copy constructor and assignment operator.
+• Move constructor and move operator.
+• The isInProgrammingMode() method, which determines whether the lock is in the working or programming state at the moment.
+• The bool toggleProgrammingMode ( int _programmingCode ) method, which attempts to change the lock to the opposite of the current state. The method should return true if the transition was successful, false otherwise. The transition fails if an incorrect programming code is entered. If the lock was already in the programming state, the action should be reversed - transfer to the working state and return true.
+• The registerCode(int) method, which adds a new unique code that the lock should accept. If the lock is not in programming mode, an exception should be thrown with the text "Not in programming mode". If such a key is already registered, the action should be ignored.
+• The unregisterCode(int) method, which removes information about a previously registered key. If the lock is not in programming mode, an exception should be thrown with the text "Not in programming mode". If no such key has been registered, the action shall be ignored.
+• The changeProgrammingCode( int ) method, which allows you to change the programming code to a new one. If the lock is not in programming mode, an exception should be thrown with the text "Not in programming mode". After a successful code change, the lock no longer accepts the old programming code.
+• The tryUnlocking(int) method, which requests to open the lock, passing the key code as an integer as an argument. In programming mode, an exception is thrown with the text "Not in operational mode" . In run mode, the method returns true if the key is recognized, false otherwise.
+• A similar tryUnlocking(const char*) method that takes a key code as a string. If the string contains something other than an integer, an exception is thrown with the text "Bad format".
+• Overloaded comparison operators with another lock for equality and inequality (== and !=). Locks are considered conditionally equal when the sets of keys they accept for opening and the programming code match.
 
-Для хранения ключей рекомендуется использовать объект-множество из дисциплины “Структуры и алгоритмы обработки данных” (IntegerSet) либо любое другое удобное средство.
+To store keys, it is recommended to use a set object from the discipline “Structures and Algorithms for Data Processing” (IntegerSet) or any other convenient means.
