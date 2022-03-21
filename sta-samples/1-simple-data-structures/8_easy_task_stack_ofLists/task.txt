@@ -1,18 +1,18 @@
-1.	Пользователь вводит в программу через консоль последовательность положительных целых чисел, 
-	завершая ввод нулем либо отрицательным числом. Далее вводится одно неотрицательное число, 
-	представляющее собой интересующую позицию P, и еще одна последовательность положительных чисел, 
-	завершаемая нулем либо отрицательным числом. Следует вставить содержимое второй введенной последовательности 
-	в первую начиная с позиции P, а затем распечатать результирующую последовательность.  Порядок выводимых 
-	чисел должен соответствовать изначальному порядку ввода.
+1. The user enters into the program through the console a sequence of positive integers,
+terminating the input with zero or a negative number. Next, enter one non-negative number,
+representing the position of interest P, and another sequence of positive numbers,
+terminated by zero or a negative number. Should paste the contents of the second entered sequence
+to the first one starting from position P, and then print the resulting sequence. Output order
+numbers must match the original input order.
 
-           Пример ввода:
-       1 2 3 4 5 0<Enter>
-       2 <Enter>
+           Input example:
+       1 2 3 4 5 0
+       2<Enter>
        6 7 8 0 <Enter>
 
-           Пример вывода:
+           Sample output:
        1 2 6 7 8 3 4 5
 
-2.	Реализуйте АТД “стек” на основе массива фиксированного размера для элементов, являющихся односвязными списками 
-	целых чисел ( т.е., стек списков ). При помещении списков в стек они должны корректно копироваться. При удалении 
-	списков из стека - корректно уничтожаться.
+2. Implement a "stack" ADT based on a fixed size array for elements that are singly linked lists
+integers (i.e., a stack of lists). When lists are placed on the stack, they must be correctly copied. When removed
+lists from the stack - correctly destroyed.
