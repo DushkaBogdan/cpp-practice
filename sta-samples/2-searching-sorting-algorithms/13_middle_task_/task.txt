@@ -1,13 +1,13 @@
-В текстовом файле, имя которого передается первым аргументом командной строки, 
-имеются данные о среднем курсе доллара на межбанковской валютной бирже по дням, заданные в следующем формате:
+In a text file whose name is passed as the first command line argument,
+there is data on the average dollar exchange rate on the interbank currency exchange by day, specified in the following format:
 
     12/11/2012 8.195
     16/11/2012 8.218
     14/11/2012 8.203
 
-Даты могут идти не подряд и не упорядочены по датам. Затем пользователь вводит интересующую его дату, 
-и программа выдает курс доллара в этот день. Если в файле имеется запись о такой дате, программа выдает 
-найденное данное непосредственно. Если в файле записи о такой дате не имеется, программа находит 
-два ближайших к этой дате значения - одна раньше и одна позже, и выдает курс как среднее арифметическое 
-между двумя ближайшими датами. Если введена дата, которая раньше и позже всех имеющихся дат, 
-программа пишет сообщение об ошибке.
+Dates may not be consecutive and are not ordered by date. Then the user enters the date of interest to him,
+and the program gives the dollar exchange rate on that day. If the file contains a record of such a date, the program issues
+found data directly. If there is no record of such a date in the file, the program finds
+the two values ​​closest to this date - one earlier and one later, and gives the rate as an arithmetic mean
+between the next two dates. If a date is entered that is earlier or later than all available dates,
+The program writes an error message.
