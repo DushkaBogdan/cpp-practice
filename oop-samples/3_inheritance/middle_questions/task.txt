@@ -1,31 +1,31 @@
-Создайте иерархию классов, описывающих различные виды вопросов в анкетах:
-	•	абстрактный класс, представляющий все вопросы анкет (SurveyQuestion), состоящий из:
-		o	текста вопроса;
-		o	чисто виртуального метода  getAnswersCount для определения количества вариантов ответов;
-		o	чисто виртуального метода getAnswer для извлечения текста варианта ответа по номеру;
-		o	чисто виртуального метода accept, принимающий некоторый абстрактный объект-посетитель (SurveyQuestionVisitor)
-	•	производный класс, представляющий обычный вид вопроса с готовыми хранящимися в явном виде вариантами ответа (ChoiceQuestion):
-		o	хранит вектор строк, каждая из которых содержит один из вариантов ответа;
-		o	реализует виртуальные методы абстрактного класса при помощи обращения к вектору строк-ответов;
-	•	производный класс, представляющий собой вопрос со стандартными вариантами ответа - Yes и No (YesNoQuestion):
-		o	не хранит никаких дополнительных переменных;
-		o	количество вариантов ответа всегда равно 2;
-		o	метод извлечения текста варианта реализуется выбором из пары “Yes” и “No”;
-	•	производный класс, представляющий собой вопрос с ранжированием (например, баллы от 1 до 5) в заданном интервале (RangeQuestion):
-		o	хранит начальное и конечное числовое значение, а также шаг;
-		o	количество вариантов ответа определяется числом возможных значений в указанном интервале при выбранном шаге;
-		o	текст ответа определяется числовым значением на шаге, соответствующем номеру ответа;
+Create a hierarchy of classes that describe different types of questions in questionnaires:
+• an abstract class representing all survey questions (SurveyQuestion), consisting of:
+o the text of the question;
+o a purely virtual getAnswersCount method for determining the number of answer options;
+o a purely virtual getAnswer method for extracting the text of the answer option by number;
+o a purely virtual accept method that accepts some abstract visitor object (SurveyQuestionVisitor)
+• a derived class that represents the usual form of a question with ready-made answer options stored explicitly (ChoiceQuestion):
+o stores a vector of strings, each of which contains one of the answer options;
+o implements the virtual methods of the abstract class by accessing the vector of response strings;
+• a derived class representing a question with standard answer options - Yes and No (YesNoQuestion):
+o does not store any additional variables;
+o the number of answer options is always 2;
+o the method of extracting the text of a variant is implemented by choosing from a pair of “Yes” and “No”;
+• a derived class representing a question with a ranking (for example, scores from 1 to 5) in a given range (RangeQuestion):
+o stores the start and end numeric value, as well as the step;
+o the number of answer options is determined by the number of possible values ​​in the specified interval at the selected step;
+o the response text is determined by the numeric value at the step corresponding to the response number;
 
-Также создайте иерархию классов-посетителей для иерархии вопросов:
-	•	интерфейс для абстрактного посетителя (SurveyQuestionVisitor);
-	•	посетитель, сохраняющий набор вопросов в дисковый файл в двоичном формате (SurveyQuestionBinarySerializationVisitor);
-	•	посетитель, печатающий текстовый листинг с вопросами и соответствующими им вариантами ответа в указанный дисковый текствый файл (SurveyQuestionTextDumpVisitor).
+Also create a visitor class hierarchy for the question hierarchy:
+• interface for an abstract visitor (SurveyQuestionVisitor);
+• a visitor that saves a set of questions to a disk file in binary format (SurveyQuestionBinarySerializationVisitor);
+• a visitor that prints a text listing of questions and their corresponding answer options to a specified disk text file (SurveyQuestionTextDumpVisitor).
 
-Разработайте консольную программу, использующую данную иерархию:
-	•	создайте несколько объектов-вопросов различного типа;
-	•	сохраните этот набор вопросов в двоичный файл, используя соответствующий класс-посетитель;
-	•	распечатайте текстовый листинг в дисковый файл, используя соответствующий класс-посетитель;
-	•	убедитесь, что текстовый листинг соответствует оригинальной структуре вопросов/ответов;
-	•	корректно уничтожьте все созданные объекты.
+Develop a console program using the given hierarchy:
+• create several question objects of different types;
+• save this set of questions to a binary file using the appropriate visitor class;
+• print a text listing to a disk file using the appropriate visitor class;
+• make sure the text listing matches the original question/answer structure;
+• correctly destroy all created objects.
 
-При реализации строго настрого запрещается применять преобразование вниз по иерархии наследования (downcast)!
+When implemented, it is strictly forbidden to apply a transformation down the inheritance hierarchy (downcast)!
