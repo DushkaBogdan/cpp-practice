@@ -1,22 +1,22 @@
-Реализуйте и верифицируйте класс, моделирующий машину для приготовления кофе (CoffeeMachine). Объявление класса следует разместить в файле coffeemachine.hpp, а реализацию - в файле coffeemachine.cpp.
-Собственную функцию main() реализовывать не нужно, следует сосредоточиться лишь на интересующем классе.
+Implement and verify a class that models a coffee machine (CoffeeMachine). The class declaration should be placed in the coffeemachine.hpp file, and the implementation in the coffeemachine.cpp file.
+You do not need to implement your own main() function, you should focus only on the class of interest.
 
-Машина для приготовления кофе использует 2 вида ресурсов - зерна и воду. Кроме того, в ней имеется бак ограниченного размера для отходов. В зависимости от рецепта кофе используется различное количество воды, а в зависимости от крепости - различное количество зерен. Для упрощения задачи будем считать, что количество отходов одинаковое для любого рецепта.
+The coffee machine uses 2 types of resources - grains and water. It also has a limited size waste bin. Depending on the coffee recipe, a different amount of water is used, and depending on the strength, a different number of beans. To simplify the task, we will assume that the amount of waste is the same for any recipe.
 
-В классе должна поддерживаться следующая функциональность:
-	•	Конструктор, принимающий максимальное количество зерен кофе в граммах (int), максимальный объем воды в миллилитрах (int), максимальное количество порций кофе, которые можно приготовить до заполнения бака с отходами после заваривания (int). Если какой-либо из этих параметров не является положительным, следует сгенерировать исключение с текстом "Incorrect initial parameters".
-	•	Методы доступа к параметрам состояния машины:
-		o	Масса оставшихся в машине зерен кофе - getBeansWeight().
-		o	Объем оставшейся в машине воды - getWaterVolume().
-		o	Количество порций кофе, которые можно приготовить до заполнения бака отходов - getFreeWastePortions().
-	•	Метод loadBeans() для загрузки зерен в машину, который пополняет текущий запас зерен до максимально возможного, и возвращает вес зерен в граммах, которые фактически были погружены в машину.
-	•	Аналогичный метод loadWater() добавления воды в машину.
-	•	Метод очистки бака с отходами - cleanWaste().
-	•	Метод bool makeCoffee( Recipe, Strength ) для приготовления кофе в соответствии с рецептом (эспрессо, американо) и крепостью (слабая, средняя, сильная), который:
-		o	возвращает true в случае успеха приготовления;
-		o	использует 4, 8 или 12 грамм кофе для одной порции соответственно крепости;
-		o	использует 120 или 200 мл воды соответственно рецепту;
-		o	создает 1 порцию отходов;
-		o	отказывается варить кофе, если не хватает ресурсов либо заполнен бак отходов, при этом возвращая значение false.
-	•	Метод washMachine() для промывания кофе-машины, расходующий до 500 мл. воды, не вызывая ошибки, если столько воды в машине не оказывается.
-	•	Перегруженный оператор преобразования к типу bool, определяющий способна ли машина приготовить хотя бы одну порцию кофе любой крепости по любому рецепту.
+The class must support the following functionality:
+• A constructor that accepts the maximum number of coffee beans in grams (int), the maximum volume of water in milliliters (int), the maximum number of coffees that can be brewed before the brew waste tank is full (int). If any of these parameters are not positive, an exception should be thrown with the text "Incorrect initial parameters".
+• Methods for accessing machine status parameters:
+o Weight of coffee beans left in the machine - getBeansWeight().
+o The amount of water left in the car - getWaterVolume().
+o Number of coffee servings that can be made before the waste tank is full - getFreeWastePortions().
+• The loadBeans() method for loading beans into the machine, which replenishes the current stock of beans to the maximum possible, and returns the weight of the beans in grams that were actually loaded into the machine.
+• A similar loadWater() method for adding water to a car.
+• Waste tank cleaning method - cleanWaste().
+• A bool makeCoffee( Recipe, Strength ) method for making coffee according to recipe (espresso, americano) and strength (low, medium, strong), which:
+o returns true if the preparation was successful;
+o use 4, 8 or 12 grams of coffee per serving, according to the strength;
+o uses 120 or 200 ml of water according to the recipe;
+o creates 1 portion of waste;
+o refuses to brew coffee if there are not enough resources or the waste tank is full, while returning the value false.
+• The washMachine() method for rinsing the coffee machine using up to 500 ml. water without causing an error if there is not enough water in the machine.
+• An overloaded bool conversion operator that determines whether the machine is capable of making at least one serving of coffee of any strength for any recipe.
