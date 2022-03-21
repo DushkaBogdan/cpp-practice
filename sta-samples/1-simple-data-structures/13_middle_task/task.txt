@@ -1,7 +1,7 @@
-В дисковом файле, путь к которому передается первым аргументом командой строки, содержатся строки с произвольным текстом. 
-Напишите программу, которая читает строки из указанного файла и в конце выводит последовательность 
-самых длинных строк, в порядке их появления в файле. Пояснение: 
-	•	пусть очередная строка, извлеченная из файла, содержит N символов, и все предыдущие строки содержали менее N-символов
-	•	если среди следующих строк не найдется таких, длина которых равна или больше N, то в конце программы выдастся данная единственная строка
-	•	если среди следующих строк найдутся такие, длина которых равна N, однако строк с длиной больше N не найдется, в конце программы выдадутся все строки, имеющие длину N
-	•	если среди следующих строк найдется строка, длина которой M, при чем M > N, следует взять в качестве нового N значение M и применить аналогичные критерии ко всем остальным строкам в файле
+The disk file, the path to which is passed as the first argument to the line command, contains lines with arbitrary text.
+Write a program that reads lines from a specified file and outputs the following sequence at the end
+longest lines, in the order they appear in the file. Explanation:
+• let the next line extracted from the file contain N characters, and all previous lines contain less than N characters
+• if among the following lines there are no such, the length of which is equal to or greater than N, then this single line will be displayed at the end of the program
+• if among the following lines there are those whose length is equal to N, but there are no lines with a length greater than N, at the end of the program all lines with a length of N will be displayed
+• if among the following lines there is a line, the length of which is M, with M > N, you should take the value of M as the new N and apply similar criteria to all other lines in the file
